@@ -1,0 +1,11 @@
+name: maveninstall
+on: [workflow_dispatch]
+jobs: 
+  installjava:
+    runs-on: self-hosted
+      steps:  
+      - name: install java
+        run: sudo yum install java -y
+      - name: install maven
+       runs: sudo yum install maven -y
+    
